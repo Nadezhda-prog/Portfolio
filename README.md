@@ -1,8 +1,29 @@
 # Portfolio
 <html>
 <head>
- <title>Заголовок сайта</title>
+ <title>Изготовление сайтов на заказ</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
  <style>
+  @media (min-width: 780px){
+   .navigation {
+    display: flex;
+    flex-direction: row; 
+    margin: 0 auto;
+   }
+  }
+  @media (min-width: 780px){
+   .navigation_item {
+     width: 390px;
+     margin: 0 auto;
+   }
+  }
+  @media (min-width: 1200px) {
+   .navigation {
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+   }
+  }
    .line {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -10,6 +31,7 @@
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    justify-content: center;
    }
   .container {
    width: 100%;
@@ -43,6 +65,7 @@
   button {
    display: block; 
    margin: 0 auto;
+   background: #73CFDC;
   }
   .container div {
    float: left;
@@ -87,11 +110,18 @@
    max-height: 400px;
    object-fit: cover;
   }
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 710px;
+    margin: 0 auto;
+  }
  </style>
 </head>
 <body>
  <header>
-  <div class='line'>
+  <div class='line' style='background-color:#AFE6ED'>
    <div class='container'>
     <div class="col-1-6"><img src='https://www.pngplay.com/wp-content/uploads/12/Internet-Explorer-Transparent-File.png' alt='LOGO' align='middle'/ width=100%></div>
     <div class="col-1-2"><h1 align='center'>Создание сайтов и лендингов</h1></div>
@@ -102,35 +132,23 @@
     </div>
    </div>
   </div>
-  <div class='line'>
+  <div class='line' style='background-color:#73CFDC'>
    <nav>
     <ul>
-     <li><a href=''>1 пункт меню</a></li>
-     <li><a href=''>2 пункт меню</a></li>
-     <li><a href=''>3 пункт меню</a></li>
+     <li><a href='#1'>Услуги</a></li>
+     <li><a href='#2'>Обо мне</a></li>
+     <li><a href='#3'>Цена и преимущества</a></li>
     </ul>
    <nav>
   </div>
  </header>
  <div class=main>
  <div class='line'>
-  <div class='container'>
+ <div class='container'>
     <div class="col-1-2">
-     <div class="carousel">
-      <div class="carousel-inner">
-       <div class="carousel-item">
-        <img src='https://sun9-28.userapi.com/impg/B9dLEmJbXlXveT3uw4SqIyT7_JOURO9-PvL9EA/rIWXIaaooqY.jpg?size=1379x980&quality=96&sign=b6b6dd398139fbadd99a9dd635f66949&c_uniq_tag=qQfJJRiXWnXo1dBuXtmP2WAoFB5RnWNEJ1mj6A3VXxE&type=album' alt='Адаптивный дизайн'>
-       </div>
-       <div class="carousel-item">
-        <img src="https://hozyindachi.ru/wp-content/uploads/2022/09/glavnaya-stranica-sajta-foto.jpg" alt="Современный сайт">
-       </div>
-       <div class="carousel-item">
-        <img src="https://avatars.mds.yandex.net/i?id=00109fd94b53c12d0d56aac61c821339_l-10703717-images-thumbs&n=13" alt="Менеджеры общаются с клиентами">
-       </div>
-      </div>
-     </div>
+     <img src='https://sun9-28.userapi.com/impg/B9dLEmJbXlXveT3uw4SqIyT7_JOURO9-PvL9EA/rIWXIaaooqY.jpg?size=1379x980&quality=96&sign=b6b6dd398139fbadd99a9dd635f66949&c_uniq_tag=qQfJJRiXWnXo1dBuXtmP2WAoFB5RnWNEJ1mj6A3VXxE&type=album' width=100% alt='Адаптивный дизайн'>
     </div>
-    <div class="col-1-2">
+    <div class="col-1-2" id='1'>
      Я готова сделать для вас сайт, который:
      <ul>
       <li>покажет все лучшие качества вашего продукта</li>
@@ -143,7 +161,7 @@
     </div>
    </div>
   </div>
-  <h2 align='center' width=100%>Почему мне можно доверять</h2>
+  <h2 align='center' width=100% id='2' style='background-color:#AFE6ED'>Почему мне можно доверять</h2>
   <div class='line'>
   <div class='container'>
     <div class="col-1-3">
@@ -161,21 +179,35 @@
    </div>
    </div>
   </div>
+  <h2 align='center' width=100% id='3' style='background-color:#AFE6ED'>Преимущества заказа сайта у меня</h2>
   <div class='line'>
   <div class='container'>
-    <div class="col-1-4">четверть</div>
-    <div class="col-1-4">четверть</div>
-    <div class="col-1-2">половина</div>
+    <div class="col-1-4">Быстро: от 5 дней</div>
+    <div class="col-1-4">Комплексно: готова выболнить большой спектр задач для работы бизнеса</div>
+    <div class="col-1-4">Честно: подберу вариант, который не потребует дальнейших вложений</div>
+    <div class="col-1-4">Дешево: от 25 тыс. руб.</div>
    </div>
   </div>
  </div>
+ <button>Оставить заявку</button>
  <footer>
  <div class='line'>
   <div class='container'>
-    <div class="col-1-3">треть</div>
-    <div class="col-1-3">треть</div>
-    <div class="col-1-3">треть</div>
   </div>
  </footer>
 </body>
 </html>
+
+<!--     <div class="carousel">
+      <div class="carousel-inner">
+       <div class="carousel-item">
+        <img src='https://sun9-28.userapi.com/impg/B9dLEmJbXlXveT3uw4SqIyT7_JOURO9-PvL9EA/rIWXIaaooqY.jpg?size=1379x980&quality=96&sign=b6b6dd398139fbadd99a9dd635f66949&c_uniq_tag=qQfJJRiXWnXo1dBuXtmP2WAoFB5RnWNEJ1mj6A3VXxE&type=album' alt='Адаптивный дизайн'>
+       </div>
+       <div class="carousel-item">
+        <img src="https://hozyindachi.ru/wp-content/uploads/2022/09/glavnaya-stranica-sajta-foto.jpg" alt="Современный сайт">
+       </div>
+       <div class="carousel-item">
+        <img src="https://avatars.mds.yandex.net/i?id=00109fd94b53c12d0d56aac61c821339_l-10703717-images-thumbs&n=13" alt="Менеджеры общаются с клиентами">
+       </div>
+      </div>
+     </div>--!>
