@@ -41,7 +41,6 @@
    padding: 0 10px;
   }
   button {
-   height: 40px;
    display: block; 
    margin: 0 auto;
   }
@@ -51,23 +50,18 @@
   }
   .col-1-2 {
    width: 50%; 
-   background-color: #FFff00;
   }
   .col-1-3 {
    width: 33.3333333333%;
-   background-color: #FFA500;
   }
   .col-1-4 {
    width: 25%;
-   background-color: #FFA5ff;
   }
   .col-1-6 {
    width: 16.666666667%;
-   background-color: #FFA5ff;
   }
   .col-2-3 {
    width: 66.6666666667%;
-   background-color: #00FF00;
   }
   .container:after {
    content: "";
@@ -100,7 +94,7 @@
   <div class='line'>
    <div class='container'>
     <div class="col-1-6"><img src='https://www.pngplay.com/wp-content/uploads/12/Internet-Explorer-Transparent-File.png' alt='LOGO' align='middle'/ width=100%></div>
-    <div class="col-1-2"><h1 align='center'>Пример сайта</h1></div>
+    <div class="col-1-2"><h1 align='center'>Создание сайтов и лендингов</h1></div>
     <div class="col-1-3">
      Надежда Самойлова <br>
      <a href='mailto:nadezhda.v.samoylova@gmail.com'>nadezhda.v.samoylova@gmail.com</a><br>
@@ -139,22 +133,34 @@
     <div class="col-1-2">
      Я готова сделать для вас сайт, который:
      <ul>
-      <li>показывает все лучшие качества вашего продукта</li>
-      <li>одинаково хорошо выглядит и на компьютере, и на смартфоне</li>
-      <li>собирает заявки от потенциальных клиентов и отправляет их в вашу CRM</li>
+      <li>покажет все лучшие качества вашего продукта</li>
+      <li>будет одинаково хорошо выглядеть и на компьютере, и на смартфоне</li>
+      <li>будет отправлять в вашу CRM заявки от ваших потенциальных клиентов</li>
      </ul>
      <br><br>
      <button>Заказать предварительный расчет</button>
      <br><br>
     </div>
    </div>
+  </div>
+  <h2 align='center' width=100%>Почему мне можно доверять</h2>
   <div class='line'>
   <div class='container'>
-    <div class="col-1-2">половина</div>
-    <div class="col-1-2">половина</div>
+    <div class="col-1-3">
+     <img src='' alt='Программирование'>
+     <p>Опыт администрирования сайтов, SEO-оптимизации, настройки рекламы, интеграции с CRM<br><br>Готова помочь решить большой спектр задач бизнеса клиента</p>
+    </div>
+    <div class="col-1-3">
+     <img src='' alt='Образование'>
+     <p>Образование в сфере программирования, менеджмента, предпринимательства и финансов<br><br>Профессиональный подход и ответственность</p>
+    </div>
+    <div class="col-1-3">
+     <img src='' alt='Бизнес'>
+     <p>15 лет управляю собственным бизнесом, в штате 40+ человек <br><br> Прекрасно понимаю клиентов и помогаю им достигать лучших результатов</p>
+    </div>
    </div>
    </div>
-   </div>
+  </div>
   <div class='line'>
   <div class='container'>
     <div class="col-1-4">четверть</div>
