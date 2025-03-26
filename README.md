@@ -4,26 +4,6 @@
  <title>Изготовление сайтов на заказ</title>
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <style>
-  @media (min-width: 780px){
-   .navigation {
-    display: flex;
-    flex-direction: row; 
-    margin: 0 auto;
-   }
-  }
-  @media (min-width: 780px){
-   .navigation_item {
-     width: 390px;
-     margin: 0 auto;
-   }
-  }
-  @media (min-width: 1200px) {
-   .navigation {
-    max-width: 980px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-   }
-  }
    .line {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -72,19 +52,19 @@
    margin-bottom: 15px;
   }
   .col-1-2 {
-   width: 50%; 
+   width: 50%;
   }
   .col-1-3 {
-   width: 33.3333333333%;
+   width: 33.333%;
   }
   .col-1-4 {
    width: 25%;
   }
   .col-1-6 {
-   width: 16.666666667%;
+   width: 16.6667%;
   }
   .col-2-3 {
-   width: 66.6666666667%;
+   width: 66.6667%;
   }
   .container:after {
    content: "";
@@ -182,10 +162,10 @@
   <h2 align='center' width=100% id='3' style='background-color:#AFE6ED'>Преимущества заказа сайта у меня</h2>
   <div class='line'>
   <div class='container'>
-    <div class="col-1-4">Быстро: от 5 дней</div>
-    <div class="col-1-4">Комплексно: готова выболнить большой спектр задач для работы бизнеса</div>
-    <div class="col-1-4">Честно: подберу вариант, который не потребует дальнейших вложений</div>
-    <div class="col-1-4">Дешево: от 25 тыс. руб.</div>
+    <div class="col-1-4"><img src='' alt=''><br><br>Быстро: от 5 дней</div>
+    <div class="col-1-4"><img src='' alt=''><br><br>Комплексно: готова выболнить большой спектр IT задач для работы бизнеса</div>
+    <div class="col-1-4"><img src='' alt=''><br><br>Честно: подберу вариант, который не потребует дальнейших вложений</div>
+    <div class="col-1-4"><img src='' alt=''><br><br>Дешево: от 25 тыс. руб.</div>
    </div>
   </div>
  </div>
@@ -193,6 +173,7 @@
  <footer>
  <div class='line'>
   <div class='container'>
+    <p>* Сайты создаются на основе текстов и дизайна заказчика</p>
   </div>
  </footer>
 </body>
@@ -210,4 +191,22 @@
         <img src="https://avatars.mds.yandex.net/i?id=00109fd94b53c12d0d56aac61c821339_l-10703717-images-thumbs&n=13" alt="Менеджеры общаются с клиентами">
        </div>
       </div>
-     </div>--!>
+     </div>
+     
+     
+  .navigation {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: flex-end;
+  }
+  @media all and (max-width: 800px) {
+   .navigation {
+    justify-content: space-around;
+   }
+  }
+  @media all and (max-width: 500px) {
+   .navigation {
+    flex-direction: column;
+   }
+  }
+  --!>
