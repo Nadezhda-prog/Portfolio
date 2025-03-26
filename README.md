@@ -3,7 +3,7 @@
 <head>
  <title>Заголовок сайта</title>
  <style>
-   header {
+   .line {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -42,11 +42,12 @@
   }
   button {
    height: 40px;
+   display: block; 
+   margin: 0 auto;
   }
   .container div {
    float: left;
    margin-bottom: 15px;
-   <!--height: 100px;--!>
   }
   .col-1-2 {
    width: 50%; 
@@ -96,7 +97,7 @@
 </head>
 <body>
  <header>
-  <div>
+  <div class='line'>
    <div class='container'>
     <div class="col-1-6"><img src='https://www.pngplay.com/wp-content/uploads/12/Internet-Explorer-Transparent-File.png' alt='LOGO' align='middle'/ width=100%></div>
     <div class="col-1-2"><h1 align='center'>Пример сайта</h1></div>
@@ -106,51 +107,56 @@
      <a href='tel:+7(905)2708717'>+7(905)2708717</a>
     </div>
    </div>
-   </div>
-   <div>
-    <nav>
-     <ul>
-      <li><a href=''>1 пункт меню</a></li>
-      <li><a href=''>2 пункт меню</a></li>
-      <li><a href=''>3 пункт меню</a></li>
-     </ul>
-    <nav>
-   </div>
+  </div>
+  <div class='line'>
+   <nav>
+    <ul>
+     <li><a href=''>1 пункт меню</a></li>
+     <li><a href=''>2 пункт меню</a></li>
+     <li><a href=''>3 пункт меню</a></li>
+    </ul>
+   <nav>
   </div>
  </header>
  <div class=main>
+ <div class='line'>
   <div class='container'>
-   <div class="col-1-2">
-    <div class="carousel">
-     <div class="carousel-inner">
-      <div class="carousel-item">
-       <img src='https://sun9-28.userapi.com/impg/B9dLEmJbXlXveT3uw4SqIyT7_JOURO9-PvL9EA/rIWXIaaooqY.jpg?size=1379x980&quality=96&sign=b6b6dd398139fbadd99a9dd635f66949&c_uniq_tag=qQfJJRiXWnXo1dBuXtmP2WAoFB5RnWNEJ1mj6A3VXxE&type=album' alt='Адаптивный дизайн'>
-      </div>
-      <div class="carousel-item">
-       <img src="https://hozyindachi.ru/wp-content/uploads/2022/09/glavnaya-stranica-sajta-foto.jpg" alt="Современный сайт">
-      </div>
-      <div class="carousel-item">
-       <img src="https://avatars.mds.yandex.net/i?id=00109fd94b53c12d0d56aac61c821339_l-10703717-images-thumbs&n=13" alt="Менеджеры общаются с клиентами">
+    <div class="col-1-2">
+     <div class="carousel">
+      <div class="carousel-inner">
+       <div class="carousel-item">
+        <img src='https://sun9-28.userapi.com/impg/B9dLEmJbXlXveT3uw4SqIyT7_JOURO9-PvL9EA/rIWXIaaooqY.jpg?size=1379x980&quality=96&sign=b6b6dd398139fbadd99a9dd635f66949&c_uniq_tag=qQfJJRiXWnXo1dBuXtmP2WAoFB5RnWNEJ1mj6A3VXxE&type=album' alt='Адаптивный дизайн'>
+       </div>
+       <div class="carousel-item">
+        <img src="https://hozyindachi.ru/wp-content/uploads/2022/09/glavnaya-stranica-sajta-foto.jpg" alt="Современный сайт">
+       </div>
+       <div class="carousel-item">
+        <img src="https://avatars.mds.yandex.net/i?id=00109fd94b53c12d0d56aac61c821339_l-10703717-images-thumbs&n=13" alt="Менеджеры общаются с клиентами">
+       </div>
       </div>
      </div>
     </div>
+    <div class="col-1-2">
+     Я готова сделать для вас сайт, который:
+     <ul>
+      <li>показывает все лучшие качества вашего продукта</li>
+      <li>одинаково хорошо выглядит и на компьютере, и на смартфоне</li>
+      <li>собирает заявки от потенциальных клиентов и отправляет их в вашу CRM</li>
+     </ul>
+     <br><br>
+     <button>Заказать предварительный расчет</button>
+     <br><br>
+    </div>
    </div>
-   <div class="col-1-2">
-    Я готова сделать для вас сайт, который:
-    <ul>
-     <li>показывает все лучшие качества вашего продукта</li>
-     <li>одинаково хорошо выглядит и на компьютере, и на смартфоне</li>
-     <li>собирает заявки от потенциальных клиентов и отправляет их в вашу CRM</li>
-    <ul>
-    <br><br>
-    <button>Заказать предварительный расчет</button>
-    <br><br>
-   </div>
-   <div>
+  <div class='line'>
+  <div class='container'>
     <div class="col-1-2">половина</div>
     <div class="col-1-2">половина</div>
    </div>
-   <div>
+   </div>
+   </div>
+  <div class='line'>
+  <div class='container'>
     <div class="col-1-4">четверть</div>
     <div class="col-1-4">четверть</div>
     <div class="col-1-2">половина</div>
@@ -158,6 +164,7 @@
   </div>
  </div>
  <footer>
+ <div class='line'>
   <div class='container'>
     <div class="col-1-3">треть</div>
     <div class="col-1-3">треть</div>
