@@ -3,11 +3,22 @@
 <head>
  <title>Заголовок сайта</title>
  <style>
+   header {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+   }
   .container {
    width: 100%;
    max-width: 1024px;
    padding: 15px;
    margin: 0 auto;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
   }
   .logo {
    float: left;
@@ -28,6 +39,9 @@
   nav li {
    display: inline-block;
    padding: 0 10px;
+  }
+  button {
+   height: 40px;
   }
   .container div {
    float: left;
@@ -82,26 +96,30 @@
 </head>
 <body>
  <header>
-  <div class='container'>
-   <div class="col-1-6"><img src='https://www.pngplay.com/wp-content/uploads/12/Internet-Explorer-Transparent-File.png' alt='LOGO' align='middle'/ width=100%></div>
-   <div class="col-1-2"><h1 align='center'>Пример сайта</h1></div>
-   <div class="col-1-3">
-    Надежда Самойлова <br>
-    <a href='mailto:nadezhda.v.samoylova@gmail.com'>nadezhda.v.samoylova@gmail.com</a><br>
-    <a href='tel:+7(905)2708717'>+7(905)2708717</a>
+  <div>
+   <div class='container'>
+    <div class="col-1-6"><img src='https://www.pngplay.com/wp-content/uploads/12/Internet-Explorer-Transparent-File.png' alt='LOGO' align='middle'/ width=100%></div>
+    <div class="col-1-2"><h1 align='center'>Пример сайта</h1></div>
+    <div class="col-1-3">
+     Надежда Самойлова <br>
+     <a href='mailto:nadezhda.v.samoylova@gmail.com'>nadezhda.v.samoylova@gmail.com</a><br>
+     <a href='tel:+7(905)2708717'>+7(905)2708717</a>
+    </div>
    </div>
-   <nav>
-    <ul>
-     <li><a href=''>1 пункт меню</a></li>
-     <li><a href=''>2 пункт меню</a></li>
-     <li><a href=''>3 пункт меню</a></li>
-    </ul>
+   </div>
+   <div>
     <nav>
+     <ul>
+      <li><a href=''>1 пункт меню</a></li>
+      <li><a href=''>2 пункт меню</a></li>
+      <li><a href=''>3 пункт меню</a></li>
+     </ul>
+    <nav>
+   </div>
   </div>
  </header>
  <div class=main>
   <div class='container'>
-   <br><br>
    <div class="col-1-2">
     <div class="carousel">
      <div class="carousel-inner">
@@ -123,12 +141,20 @@
      <li>показывает все лучшие качества вашего продукта</li>
      <li>одинаково хорошо выглядит и на компьютере, и на смартфоне</li>
      <li>собирает заявки от потенциальных клиентов и отправляет их в вашу CRM</li>
+    <ul>
+    <br><br>
+    <button>Заказать предварительный расчет</button>
+    <br><br>
    </div>
-   <div class="col-1-2">половина</div>
-   <div class="col-1-2">половина</div>
-   <div class="col-1-4">четверть</div>
-   <div class="col-1-4">четверть</div>
-   <div class="col-1-2">половина</div>
+   <div>
+    <div class="col-1-2">половина</div>
+    <div class="col-1-2">половина</div>
+   </div>
+   <div>
+    <div class="col-1-4">четверть</div>
+    <div class="col-1-4">четверть</div>
+    <div class="col-1-2">половина</div>
+   </div>
   </div>
  </div>
  <footer>
